@@ -1,0 +1,66 @@
+body{
+    background-color: lightgray;
+}
+.controle{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+   
+}
+button{
+    border-radius: 20px;
+    border: none;
+    width: 50px;
+    margin-left: 100px;
+}
+#empate{
+    margin: 20px;
+    border-radius: 20px;
+    border: 1px solid ;
+    width: 160px;
+    height: 100px;
+    background-color: rgb(183, 226, 226);
+    color: white;
+    display: none;
+    padding: 20px;
+}
+#not {
+    margin: 20px;
+    border-radius: 20px;
+    border: 1px solid ;
+    width: 160px;
+    height: 100px;
+    background-color: rgb(183, 226, 226);
+    color: white;
+    display: none;
+    padding: 20px;
+}
+
+#yes {
+    margin: 20px;
+    border-radius: 20px;
+    border: 1px solid ;
+    width: 160px;
+    height: 100px;
+    background-color: rgb(183, 226, 226);
+    color: white;
+    display: none;
+    padding: 20px;
+}
+
+#sorteado {
+    margin: 20px;
+    border-radius: 20px;
+    border: 1px solid ;
+    width: 160px;
+    height: 100px;
+    background-color: rgb(183, 226, 226);
+    color: white;
+    display: none;
+    padding: 20px;
+}
+.central{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}

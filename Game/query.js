@@ -10,6 +10,6 @@ $(document).ready(function(){
     $('#pla').click(function(){
         $('#pla').hide();
         $('#play').show();
-        
       });
+      
   });

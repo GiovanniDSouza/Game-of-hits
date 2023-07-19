@@ -2,38 +2,65 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game</title>
-    <link rel="stylesheet" href="style.css">
-     <!--Jquery-->
+    <title>Document</title>
+    <!--Jquery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="style.js"></script>
 </head>
 <body>
-    <div class="controle">
-        <p>Game of who hits the number from 0 to 1</p>
+    <div class="container">
+        <div class="login" id="login">
+            <div id="msgErro">
+                <p>Alert email or password is wrong</p>
+                <button class="okErro" onclick="msgErroOk();">Ok</button>
+            </div>
+            <input type="email" name="" id="email" placeholder="Email" class="in">
+            <input type="password" name="" id="password" placeholder="Password" class="in">
+            <button class="btn enter" onclick="login();  return false">Login</button>
+        </div>
+        <div id="game" class="game">
+            <div class="controle">
+                <p>Game of who hits the number from 0 to 1</p>
 
-        <button onclick="myFunction()" id="pla">Play</button>
-        <button  id="play" style="display: none;">Play</button>
+                <div class="tabela">
+                    <p>PLayer 1</p>
+                    <input type="text" name="" id="playerOne" class="in" placeholder="Name of player">
+                    <input type="password" name="" id="one"  class="in" placeholder="Number">
+                    <p>PLayer 2</p>
+                    <input type="text" name="" id="playerTwo"  class="in" placeholder="Name of player">
+                    <input type="password" name="" id="two"  class="in" placeholder="Number">
+                </div>
+               
+                <button onclick="myFunctionn();" id="pla" class="play" value="enviar" >Play</button>
+                <button  id="play" style="display: none;" class="play"  value="enviar">Play</button>
+                <div id="add">
+                    <p>Add players</p>
+                    <input type="radio" name="" class="submit" id="box">
+                </div>
+              
+            </div>
+         <div class="central">
+            <div id="sorteado">
+                <p id="sNamber"></p>
+            </div>
+              
+            <div id="empate">
+                <p id="dem"></p>
+            </div>
+        
+            <div id="not">
+                <p id="demo"></p>
+            </div>
+            
+            <div id="yes">
+                <p id="demoo"></p>
+            </div>
+         </div>
+        </div>
     </div>
-<div class="central">
-    <div id="sorteado">
-        <p id="sNamber"></p>
-    </div>
-      
-    <div id="empate">
-        <p id="dem"></p>
-    </div>
-
-    <div id="not">
-        <p id="demo"></p>
-    </div>
-    
-    <div id="yes">
-        <p id="demoo"></p>
-    </div>
-</div>
-   <script src="style.js"></script>
-   <script src="query.js"></script>
+    <script src="test.js"></script>
+    <script src="query.js"></script>
 </body>
 </html>

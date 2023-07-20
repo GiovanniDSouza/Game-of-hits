@@ -1,7 +1,7 @@
 const submitBtnn = document.querySelector('.btn');
 const submitBtn = document.querySelector('.submit');
 const chatArea = document.querySelector('.game');
-
+const angle = document.getElementById('angle');
 // Clik do botão enter
 document.addEventListener("keypress", function(e){
     if(e.key === "Enter"){
@@ -16,7 +16,7 @@ submitBtn.addEventListener('click', ()=>{
     
  document.getElementById("pla").style.display = "none";
  document.getElementById("play").style.display = "none";
- document.getElementById("add").style.display = "none";
+ document.getElementById("add").style.visibility = "hidden";
     let temp = ` <div class="controle" id="remo">
    
     <div class="tabela">
@@ -31,9 +31,16 @@ submitBtn.addEventListener('click', ()=>{
                 <button  id="play" style="display: none;" class="play"  value="enviar">Play</button>
                 <div id="remove">
                 <p>Remove new players</p>
-                    <input type="radio" name="" class="submit" id="box" onclick="clean();">
+                    <input type="radio" name="" class="submit" id="box" onclick="remove();">
                 </div>
 </div>`;
     
     chatArea.insertAdjacentHTML("beforeend", temp);
 })
+
+angle.addEventListener('click', ()=>{
+    
+    document.getElementById("game").style.display = "none";
+    document.getElementById("fa").style.visibility = "visible";
+      
+   })

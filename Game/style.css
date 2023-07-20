@@ -4,6 +4,7 @@
 }
 body{
     background-color: rgba(0, 0, 0, 0.842);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .container{
     display: grid;
@@ -23,6 +24,10 @@ body{
     background-color: #1a1a1af5;
     box-shadow: 3px 3px 3px #acacac59;
 }
+h2{
+    color: white;
+    margin: 10px;
+}
 .in{
     width: 200px;
     border: none;
@@ -41,7 +46,8 @@ body{
     color: rgba(255, 255, 255, 0.767);
     background-color: rgba(0, 153, 255, 0.849);
 }
-.enter:hover{
+.enter:hover,
+.enter:focus{
     background-color: rgb(0, 153, 255);
     box-shadow: 0px 0px 40px rgb(0, 153, 255);
     color: rgb(255, 255, 255);
@@ -74,13 +80,20 @@ p{
     width: 40px;
     cursor: pointer;
 }
-.okErro:hover{
+.okErro:hover,
+.okErro:focus{
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 40px rgb(255, 255, 255);
     color:  rgb(0, 0, 255);
 }
 #game{
     display: none;
+}
+#angle{
+    cursor: pointer;
+    font-size: 30px;
+    margin-left: -40px;
+    margin-top: -45px;
 }
 .tabela{
     display: flex;
@@ -145,6 +158,7 @@ p{
     color: white;
 }
 .play{
+    cursor: pointer;
     border-radius: 20px;
     border: none;
     width: 50px;
@@ -155,4 +169,27 @@ p{
 }
 #remove{
     display: flex;
+}
+.clickJog{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+#fa{
+    cursor: pointer;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    font-size:48px;
+    color:rgb(0, 38, 255); 
+    background-color: blanchedalmond;
+}
+.submitt{
+    width: 50px;
+    height: 50px;
+    background-color: red;
 }

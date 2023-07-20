@@ -6,7 +6,7 @@ function login(){
     if (login == "test" && senha == "1234"){
         console.log("Bem-vindo");
         document.getElementById("login").style.display = "none";
-        document.getElementById("game").style.display = "block";
+        document.getElementById("fa").style.visibility = "visible";
     } else{ 
         document.getElementById("msgErro").style.display = "block";
         document.getElementById("email").style.border = "2px solid red";
@@ -108,7 +108,7 @@ function myFunction() {
 // Função de limpa os jogadores embaixo é outro modo de fazer
 function clean()
 {
-    document.getElementById("add").style.display = 'block';
+    document.getElementById("add").style.visibility = "visible";
     document.getElementById("pla").style.display = 'block';
     
     document.getElementById('remo').innerHTML = "";
@@ -116,7 +116,11 @@ function clean()
 // Função para remover os outros jogadores
 function remove(){
     document.getElementById("remo").style.display = 'none';
-    document.getElementById("add").style.display = 'block';
+    document.getElementById("add").style.visibility = "visible";
     document.getElementById("pla").style.display = 'block';
     
+}
+function clickJogo() {
+    document.getElementById("fa").style.visibility = "hidden";
+    document.getElementById("game").style.display = "block";
 }

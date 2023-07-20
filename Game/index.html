@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Jquery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -16,14 +17,18 @@
                 <p>Alert email or password is wrong</p>
                 <button class="okErro" onclick="msgErroOk();">Ok</button>
             </div>
+            <h2>Games</h2>
             <input type="email" name="" id="email" placeholder="Email" class="in">
             <input type="password" name="" id="password" placeholder="Password" class="in">
             <button class="btn enter" onclick="login();  return false">Login</button>
         </div>
+        <div class="clickJog">
+            <i class="fa fa-steam-square" id="fa" onclick="clickJogo();"></i>
+        </div>
         <div id="game" class="game">
             <div class="controle">
                 <p>Game of who hits the number from 0 to 1</p>
-
+                <i class="fa fa-angle-left" id="angle"></i>
                 <div class="tabela">
                     <p>PLayer 1</p>
                     <input type="text" name="" id="playerOne" class="in" placeholder="Name of player">

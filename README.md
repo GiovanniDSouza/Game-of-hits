@@ -12,6 +12,6 @@ email: test & senha:1234
 - jQuery
 
 ### Preview
-![image](https://github.com/GiovanniDSouza/Game-of-hits/assets/80133913/49970dc3-2e62-44e5-89fb-163f741633e9)
+![image](https://github.com/GiovanniDSouza/Game-of-hits/assets/80133913/7ba93abb-02bf-4f26-ada0-fd768152eb2f)
 
-![image](https://github.com/GiovanniDSouza/Game-of-hits/assets/80133913/5a907e77-0c37-4631-8c6c-2e5b6281dd1d)
+![image](https://github.com/GiovanniDSouza/Game-of-hits/assets/80133913/5f13e991-4842-4280-9081-569e1c29d073)
